@@ -119,6 +119,7 @@ function initSessionPage(currentId){
   const eyebrow = document.querySelector('.header .eyebrow');
   if (eyebrow && s) eyebrow.textContent = `PART ${s.id} · ${s.tool}`;
   decoratePrompts();
+  renderPracticeFiles("practice-files-list", false);
   renderNav(currentId);
   renderFooter(`PART ${currentId}`);
   addToTop();
@@ -184,7 +185,28 @@ function initIndexPage(){
   const t = document.getElementById('total-prompts');
   if (t) t.textContent = total;
   renderParts();
+  renderPracticeFiles("practice-files-index", true);
   renderLibrary();
   renderFooter();
   addToTop();
+}
+
+// 실습 파일 목록 (data.js의 PRACTICE_FILES) — 첫 화면과 PART 4에서 함께 사용
+function renderPracticeFiles(containerId, withLink){
+  const box = document.getElementById(containerId);
+  if (!box || typeof PRACTICE_FILES === 'undefined') return;
+  box.innerHTML = PRACTICE_FILES.sets.map(set => `
+    <div class="file-set">
+      <div class="file-set-head">
+        <span class="set-no">${set.no}</span>
+        <b>${set.title}</b>
+        ${withLink ? `<a class="set-link" href="${PRACTICE_FILES.anchor}">PART ${PRACTICE_FILES.part}에서 사용 →</a>` : ''}
+      </div>
+      ${set.files.map(f => `
+        <a class="file-row" href="${f.href}" download="${f.name}">
+          <span class="file-ico">PDF</span>
+          <span class="file-name">${f.name}<small>${f.type}</small></span>
+          <span class="file-dl">다운로드 ↓</span>
+        </a>`).join('')}
+    </div>`).join('');
 }

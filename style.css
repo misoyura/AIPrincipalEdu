@@ -239,3 +239,20 @@ footer strong{color:var(--text)}
 #toast.show{opacity:1;transform:translate(-50%,0)}
 .to-top{position:fixed;right:22px;bottom:24px;width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;border:0;font-size:18px;cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .3s;z-index:60}
 .to-top.show{opacity:1;pointer-events:auto}
+
+/* practice files */
+.file-sets{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 20px}
+@media (max-width:900px){.file-sets{grid-template-columns:1fr}}
+.file-set{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.page-session .file-set{box-shadow:none;background:#fdfcf9}
+.file-set-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.file-set-head b{flex:1;color:var(--ink);font-size:15.5px;line-height:1.4}
+.set-no{flex:none;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.set-link{width:100%;font-size:13px;color:var(--gold);text-decoration:none;font-weight:600;padding-left:38px}
+.set-link:hover{text-decoration:underline}
+.file-row{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;text-decoration:none;transition:border-color .2s,background .2s}
+.file-row:hover{border-color:var(--gold);background:var(--gold-soft)}
+.file-ico{flex:none;font-size:11px;font-weight:800;color:#fff;background:#b3412e;border-radius:6px;padding:5px 6px;letter-spacing:.04em}
+.file-name{flex:1;min-width:0;font-size:14.5px;font-weight:600;color:var(--text);line-height:1.4;overflow-wrap:anywhere}
+.file-name small{display:block;font-size:12.5px;font-weight:500;color:var(--muted)}
+.file-dl{flex:none;font-size:13px;font-weight:700;color:var(--navy)}

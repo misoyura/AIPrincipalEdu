@@ -119,3 +119,23 @@ const SESSIONS = [
     ],
   },
 ];
+
+// 실습 파일 — 첫 화면 '실습 파일' 칸과 PART 4 결재 검토 비서 아래에 함께 표시됩니다.
+// 파일은 files/ 폴더에 두고, 받을 때는 name(한글 파일명)으로 저장됩니다.
+const PRACTICE_FILES = {
+  part: 4,
+  anchor: "session_4.html#practice-files",
+  sets: [
+    { no: 1, title: "실습 1 · 계획서 검토", files: [
+      { name: "1_계획서_겨울방학_방과후프로그램.pdf", href: "files/1_plan_winter_afterschool.pdf", type: "계획서" },
+    ]},
+    { no: 2, title: "실습 2 · 학사일정 + 기안문 함께 검토", files: [
+      { name: "2_2학기_학사일정.pdf", href: "files/2_academic_calendar.pdf", type: "학사일정" },
+      { name: "2_기안문_교원연수_강사초빙.pdf", href: "files/2_draft_teacher_training.pdf", type: "기안문" },
+    ]},
+    { no: 3, title: "실습 3 · 운영계획 + 공문 함께 검토", files: [
+      { name: "3_가을체육대회_운영계획.pdf", href: "files/3_sports_day_plan.pdf", type: "계획서" },
+      { name: "3_공문_겨울철_시설안전점검.pdf", href: "files/3_notice_winter_safety.pdf", type: "공문" },
+    ]},
+  ],
+};
