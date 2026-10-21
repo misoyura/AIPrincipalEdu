@@ -11,7 +11,7 @@ function showToast(msg){
 
 // 프롬프트 복사
 function copyPrompt(btn){
-  const text = btn.closest('.prompt, .hero-card').querySelector('pre').textContent.trim();
+  const text = btn.closest('.prompt').querySelector('pre').textContent.trim();
   const onSuccess = () => {
     btn.textContent = '✓ 복사됨'; btn.classList.add('done');
     showToast('프롬프트가 복사되었습니다 ✓');
@@ -90,7 +90,7 @@ function renderFooter(extra){
   if (footer) footer.innerHTML = `
     <div class="wrap">
       <strong>${COURSE.title}</strong> · ${COURSE.org} ${COURSE.date}${extra ? ' · ' + extra : ''}<br>
-      강사 ${COURSE.instructor} · ${COURSE.instructorRole}
+      ${COURSE.orgs}
     </div>`;
 }
 

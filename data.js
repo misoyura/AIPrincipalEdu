@@ -7,8 +7,7 @@ const COURSE = {
   subtitle: "AI로 쓰는 문서, 나만의 비서 만들기",
   org: "경기도교육청북부연수원",
   date: "2026. 10. 28.",
-  instructor: "정덕경",
-  instructorRole: "한국강사교육협회 이사 · AI 실무강사",
+  orgs: "한국강사교육협회 · 미래교육아카데미",
 };
 
 const SESSIONS = [

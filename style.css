@@ -52,20 +52,18 @@ a{color:inherit}
 .hero-stats strong{display:block;font-family:var(--serif);font-size:34px;line-height:1.1;color:#fff}
 .hero-stats span{font-size:13.5px;color:rgba(255,255,255,.65)}
 
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
-@media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}}
-.hero-card{margin:0;border:1px solid rgba(212,180,131,.35);border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));backdrop-filter:blur(14px);box-shadow:0 30px 60px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.12);overflow:hidden;transform:rotate(1.2deg)}
-@media (max-width:960px){.hero-card{transform:none}}
-.hc-top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.1)}
-.hc-dots{display:flex;gap:6px}.hc-dots i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.25)}
-.hc-dots i:first-child{background:var(--gold-2)}
-.hc-tag{font-size:12.5px;letter-spacing:.12em;color:var(--gold-2);font-weight:700}
-.hero-card pre{margin:0;padding:24px 22px;white-space:pre-wrap;word-break:keep-all;font-family:var(--sans);font-size:17px;line-height:1.85;color:#fff}
-.hc-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.12)}
-.hc-foot a{font-size:14px;color:rgba(255,255,255,.75);text-decoration:none}
-.hc-foot a:hover{color:#fff}
-.hero-card .copy-btn{background:var(--gold);color:#fff}
-.hero-card .copy-btn:hover{background:#c39b60}
+
+/* brand bar (logos) */
+.brandbar{background:#fff;border-bottom:1px solid var(--line)}
+.brandbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px;padding-top:12px;padding-bottom:12px}
+.brandbar img{display:block;height:38px;width:auto;max-width:46%;object-fit:contain}
+.brandbar .logo-mirae{height:34px}
+.page-session .brandbar .wrap{min-height:60px}
+.page-session .brandbar img{height:30px}.page-session .brandbar .logo-mirae{height:27px}
+@media (max-width:640px){.brandbar img{height:26px}.brandbar .logo-mirae{height:22px}.page-session .brandbar img{height:22px}.page-session .brandbar .logo-mirae{height:19px}}
+.org-logos{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:28px}
+.org-logos img{display:block;height:48px;width:auto;max-width:100%;object-fit:contain}
+.org-logos img + img{height:40px}
 
 /* ───────── index sections ───────── */
 .page-index main{margin-top:-64px;position:relative;z-index:2}
@@ -119,7 +117,7 @@ a{color:inherit}
 .lib-item .arrow{color:var(--muted);font-size:14px}
 .lib-empty{padding:40px 24px;text-align:center;color:var(--muted)}
 
-/* instructor */
+/* info boxes */
 .inst{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media (max-width:760px){.inst{grid-template-columns:1fr}}
 .inst-box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 30px;box-shadow:var(--shadow)}
