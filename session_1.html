@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PART 1 · 프롬프트 작성법 · AI와 함께하는 스마트 학교 경영</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-session">
+
+<header class="header">
+  <div class="wrap">
+    <a class="home" href="index.html">← AI와 함께하는 스마트 학교 경영</a>
+    <p class="eyebrow">PART 1 · ChatGPT</p>
+    <h1>AI 활용의 시작, 프롬프트 작성법</h1>
+    <p class="subtitle">교장실 업무에 AI를 어디까지 맡길지 정하고, 상황·대상·목적이 담긴 요청과 메타 프롬프트로 좋은 초안을 받는 법을 익힙니다.</p>
+  </div>
+</header>
+
+<nav class="nav" id="site-nav"></nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="card" id="where">
+      <h2><span class="num">01</span>교장실 업무, AI는 어디에 쓸까?</h2>
+      <p class="lead">반복되는 일을 골라 AI 비서의 역할을 정합니다.</p>
+
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>행사 인사말</b><span>· 조회 훈화와 행사 인사말<br>· 대상과 시간을 알려주기<br>· 초안을 받아 직접 다듬기</span></div>
+        <div class="tile"><div class="t-no">2</div><b>회의 준비</b><span>· 교직원 회의 안건 정리<br>· 의견이 필요한 쟁점 찾기<br>· 질문 목록 만들기</span></div>
+        <div class="tile"><div class="t-no">3</div><b>자료 검토</b><span>· 공개 가능한 자료 요약<br>· 핵심 내용과 빠진 점 확인<br>· 학교 상황에 맞게 판단</span></div>
+      </div>
+
+      <h3>맡긴다 — 반복되는 초안 업무</h3>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>행사 인사말</b><span>입학식·졸업식의 대상과 핵심 메시지를 알려주고 인사말 초안을 받아 다듬습니다.</span></div>
+        <div class="tile"><div class="t-no">2</div><b>회의 안건</b><span>교직원 회의에서 논의할 안건을 묶고 결정이 필요한 질문을 정리합니다.</span></div>
+        <div class="tile"><div class="t-no">3</div><b>자료 요약</b><span>공개 가능한 자료의 핵심을 요약하고 확인이 필요한 내용을 따로 표시합니다.</span></div>
+      </div>
+      <div class="box note"><span class="box-title">✓ 핵심</span>초안 작성은 AI와 함께하고, 실제 사용 전에는 내용을 확인합니다.</div>
+
+      <h3>나만의 도구 — 입력 항목과 결과물 형식을 정합니다</h3>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>인사말 도우미</b><span>행사 종류·대상·핵심 메시지·말하기 시간을 입력하면 초안을 만듭니다.</span></div>
+        <div class="tile"><div class="t-no">2</div><b>회의 준비 도우미</b><span>회의 목적과 안건을 입력하면 논의 순서와 결정할 질문의 초안을 만듭니다.</span></div>
+        <div class="tile"><div class="t-no">3</div><b>안내문 초안 도우미</b><span>행사 정보와 전달 사항을 입력하면 학부모 안내문 초안을 만듭니다.</span></div>
+      </div>
+      <div class="box note"><span class="box-title">✓ 핵심</span>필요한 입력과 원하는 출력부터 정하면 작은 도구로 만들 수 있습니다.</div>
+
+      <h3>교장실 AI 비서, 어디까지 맡길까?</h3>
+      <ol class="steps">
+        <li><b>사실을 확인합니다</b><span>행사 날짜, 숫자, 인용, 학교의 실제 계획은 원자료와 대조.</span></li>
+        <li><b>자료 공개 범위를 지킵니다</b><span>학생·교직원의 개인정보와 비공개 문서는 입력 금지.</span></li>
+        <li><b>최종 판단은 사람이 합니다</b><span>표현의 적절성, 대외 발송, 민감한 사안은 학교의 절차에 따라 검토.</span></li>
+      </ol>
+      <div class="box warn"><span class="box-title">⚠ 원칙</span>초안은 AI와 함께, 발송·공개·결정은 사람이 확인합니다.</div>
+    </section>
+
+    <section class="card" id="specific">
+      <h2><span class="num">02</span>요청을 구체화하면 초안이 달라진다</h2>
+      <p class="lead">상황·대상·목적·길이를 함께 입력합니다.</p>
+
+      <div class="vs">
+        <div class="bad"><h4>막연한 요청</h4><p class="q">“입학식 인사말 써줘”</p><p>대상과 핵심 메시지가 빠져 흔한 표현이 나오기 쉽습니다.</p></div>
+        <div class="good"><h4>교장실 업무에 맞는 요청</h4><p class="q">“중학교 입학식에서 신입생에게 3분간 전할 격려 인사말 초안을 써줘. 새 출발을 응원해줘.”</p><p>상황과 대상에 맞는 초안 받기 → 교장이 사실과 표현 다듬기</p></div>
+      </div>
+
+      <div class="prompt short" id="p1-01" data-label="입학식 인사말 — 구체적으로 요청하기"><pre>중학교 입학식에서 신입생에게 3분간 전할 격려 인사말 초안을 써줘.
+새 출발을 응원해줘.</pre></div>
+
+      <h3>일반 대화와 나만의 AI 비서</h3>
+      <p>학교의 맥락과 작성 기준을 미리 정할 수 있습니다.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>기준</th><th>일반 대화</th><th>교장실 AI 비서</th></tr></thead>
+        <tbody>
+          <tr><td>업무 설명</td><td>매번 상황을 설명</td><td>역할과 기준을 미리 설정</td></tr>
+          <tr><td>결과물</td><td>요청에 따른 초안</td><td>대상·문체에 맞춘 초안</td></tr>
+          <tr><td>참고 자료</td><td>그때 필요한 자료 제공</td><td>허용한 자료를 참고</td></tr>
+          <tr><td>교장의 역할</td><td>요청하고 검토·수정</td><td>기준을 정하고 검토·수정</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box note"><span class="box-title">✓ 핵심</span>반복해서 쓸 작성 기준을 정하면 업무에 맞는 초안을 얻기 쉽습니다.</div>
+    </section>
+
+    <section class="card" id="tools">
+      <h2><span class="num">03</span>생성형 AI 도구와 ChatGPT 설정</h2>
+      <p class="lead">생성형 AI 3종을 비교하고, ChatGPT의 요금제·데이터 관리·개인맞춤설정을 살펴봅니다.</p>
+
+      <h3>생성형 AI 3종 비교</h3>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>구분</th><th>ChatGPT</th><th>Gemini</th><th>Claude</th></tr></thead>
+        <tbody>
+          <tr><td>제공사</td><td>OpenAI</td><td>Google</td><td>Anthropic</td></tr>
+          <tr><td>나만의 비서</td><td>프로젝트</td><td>젬</td><td>프로젝트</td></tr>
+          <tr><td>설정 기능</td><td>프로젝트 지침·참고 파일</td><td>맞춤 지침·지식 파일</td><td>프로젝트 지침·지식 자료</td></tr>
+          <tr><td>자료 조사</td><td>웹 검색·심층리서치</td><td>웹 검색·Deep Research</td><td>웹 검색·Research(유료)</td></tr>
+          <tr><td>활용</td><td>학교 행사 인사말 초안<br>학교 상황에 맞게 수정</td><td>교육정책 공개 자료 조사<br>핵심 쟁점과 질문 정리</td><td>긴 문서 요약<br>회의 안건, 안내문 초안 다듬기</td></tr>
+        </tbody>
+      </table></div>
+      <p class="prompt-note">※ 기능과 이용 범위는 계정·요금제·학교 관리자 설정에 따라 다릅니다. 2026. 10월 기준</p>
+
+      <h3>ChatGPT 홈화면 · 데이터 관리 · 임시 채팅</h3>
+      <ul>
+        <li><b>챗GPT 플랜</b> — 무료·유료 요금제 비교 (강의 화면 참고)</li>
+        <li><b>홈화면 – 무료</b> — 무료의 Think는 GPT-5.6 Luna 기반 · 무료 Work 사용 불가</li>
+        <li><b>홈화면 – 유료</b> · <b>데이터 관리</b> · <b>개인맞춤설정</b> · <b>임시 채팅</b> — 설정 화면은 강의 시간에 함께 확인합니다.</li>
+      </ul>
+
+      <h3>개인맞춤설정 — 사용자 지정 지침(예시)</h3>
+      <div class="box tip"><span class="box-title">💡 TIP</span>개인맞춤설정은 길게 쓰는 것보다 “내가 누구인지 + 어떤 답변을 원하는지 + 무엇을 피할지”를 넣는 것이 핵심입니다.</div>
+      <div class="prompt" id="p1-02" data-label="개인맞춤설정 — 사용자 지정 지침 예시"><pre>추측하거나 단정하지 말고, 확인 가능한 정보와 근거를 중심으로 답변한다.
+확실하지 않은 내용은 "확실하지 않음", "추가 확인 필요"라고 표시한다.
+최신 정보가 필요한 내용은 현재 기준으로 확인하여 답변한다.
+법률, 의료, 금융, 세금, 안전 등 전문 분야는 일반 정보와 전문 판단을 구분하여 설명한다.
+중요한 정보는 정부기관, 공공기관, 공식 홈페이지 등 신뢰할 수 있는 출처를 우선 참고한다.
+답변은 핵심부터 제시하고, 필요한 경우 단계별로 쉽게 설명한다.
+어려운 전문용어보다 초보자도 이해하기 쉬운 표현과 실제 예시를 사용한다.
+여러 방법이 있을 경우 장단점을 비교하고, 가장 쉽게 적용할 수 있는 방법부터 제시한다.
+글쓰기나 업무 문서는 목적과 대상에 맞게 정확하고 간결하게 작성한다.
+사용자가 바로 활용할 수 있도록 예시, 실행 방법, 체크리스트 등을 함께 제공한다.</pre></div>
+    </section>
+
+    <section class="card" id="elements">
+      <h2><span class="num">04</span>프롬프트란? 요청에 담을 5가지</h2>
+      <p class="lead">프롬프트는 AI에게 건네는 <b>업무 요청서</b>입니다.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>요소</th><th>스스로 확인할 질문</th><th>학교 업무 예시</th></tr></thead>
+        <tbody>
+          <tr><td>목적</td><td>왜 쓰나요?</td><td>설명회 참여 안내</td></tr>
+          <tr><td>맥락</td><td>누가 읽나요?</td><td>초등 신입생 학부모</td></tr>
+          <tr><td>자료</td><td>무엇을 근거로 쓰나요?</td><td>확정 행사 계획</td></tr>
+          <tr><td>형식</td><td>어떤 모습이 필요한가요?</td><td>제목, 본문, 일정표</td></tr>
+          <tr><td>기준</td><td>무엇을 지켜야 하나요?</td><td>미확정 내용은 확인 필요</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="card" id="meta">
+      <h2><span class="num">05</span>메타 프롬프팅 — AI에게 프롬프트를 요청하기</h2>
+      <p class="lead">AI에게 프롬프트를 만들거나 개선하도록 요청합니다.</p>
+
+      <div class="vs">
+        <div class="bad"><h4>직접 요청하기</h4>
+          <p>01 “학부모 설명회 안내문을 써줘.”</p><p>02 AI가 바로 문서 초안을 작성</p><p>03 결과를 보고 조건을 추가</p></div>
+        <div class="good"><h4>프롬프트를 요청하기</h4>
+          <p>01 “안내문 작성용 프롬프트를 만들어 줘.”</p><p>02 AI가 필요한 조건을 질문</p><p>03 완성된 프롬프트로 문서 작성</p></div>
+      </div>
+
+      <h3>메타 프롬프트 — 원래 요청 뒤에 붙이는 문장</h3>
+      <div class="prompt" id="p1-03" data-label="메타 프롬프트 — 개선 요청 문장 (어떤 요청 뒤에도 붙여 쓰기)"><pre>위 요청을 더 구체적인 프롬프트로 개선해 줘.
+필요한 정보가 부족하면 먼저 질문하고,
+완성된 프롬프트는 복사하기 쉽게 코드블록으로 제시해 줘.</pre></div>
+
+      <h3>실습 · 학교장 인사말</h3>
+      <div class="prompt" id="p1-04" data-label="학교장 인사말 — 원래 요청 + 메타 프롬프트"><pre>학부모 설명회에서 교장이 전할 짧은 인사말을 만들 거야.
+따뜻하고 정중한 말투로, 1분 분량으로 써줘.
+위 요청을 더 구체적인 프롬프트로 개선해 줘.
+필요한 정보가 부족하면 먼저 질문하고,
+완성된 프롬프트는 복사하기 쉽게 코드블록으로 제시해 줘.</pre></div>
+
+      <h3>개선된 전문가용 프롬프트 (AI가 만들어 준 결과 화면)</h3>
+      <p class="prompt-note">※ 슬라이드 캡처 화면에 보이는 부분(1~4단계 일부, 7~8항)을 옮겼습니다. 5~6항은 원본 화면에 나오지 않습니다.</p>
+      <div class="prompt example" id="p1-05" data-label="초등학교 학부모 설명회 교장 인사말 작성 전문가 프롬프트 (결과 예시)"><pre>초등학교 학부모 설명회 교장 인사말 작성 전문가 프롬프트
+
+1. 역할(Persona)
+당신은 초등학교 교육 현장과 학부모 소통에 대한 이해가 깊은 학교장 연설문 작성 전문가입니다. 학교의 교육 방향을 학부모에게 따뜻하고 진정성 있게 전달하며, 학교와 가정이 신뢰를 바탕으로 협력할 수 있도록 돕는 인사말을 작성합니다.
+
+2. 작성 목적
+초등학교 학부모 설명회에서 교장이 전체 학부모에게 전할 공식 인사말을 작성합니다.
+인사말의 주요 목적은 다음과 같습니다.
+- 참석한 학부모에게 감사와 환영의 마음을 전합니다.
+- 학교 교육과정 및 학교생활 안내의 취지를 자연스럽게 소개합니다.
+- 학생의 성장과 행복을 위해 학교와 가정의 소통 및 협력이 중요하다는 점을 전달합니다.
+- 학부모가 학교를 신뢰하고 교육활동에 관심을 가질 수 있도록 긍정적인 분위기를 조성합니다.
+
+3. 작성 조건
+- 대상: 초등학교 전체 학부모
+- 화자: 초등학교 교장
+- 상황: 학교 교육과정 및 학교생활 안내를 위한 학부모 설명회
+- 핵심 메시지: 학교와 가정의 소통과 협력
+- 말투: 따뜻하고 정중하며 진정성 있는 공적 화법
+- 분량: 실제 낭독 기준 약 1분
+- 문체: 자연스러운 구어체를 사용하되 공식적인 자리의 품격을 유지합니다.
+
+4. 단계별 작성 지침
+1단계. 환영과 감사
+바쁜 일정에도 설명회에 참석한 학부모에게 감사의 뜻을 전합니다. 형식적인 인사에 그치지 않고 학부모의 관심과 참여를 존중하는 표현을 사용합니다.
+2단계. 설명회 취지 소개
+학교 교육과정과 학교생활에 관한 정보를 학부모와 공유하는 자리라는 점을 간결하게 설명합니다. 실제 제공된 정보의 범위를 넘어 구체적인 교육활동이나 학교 정책을 임의로 추가하지 않습니다.
+
+7. 최종 검토 기준
+최종 답변을 출력하기 전에 다음 사항을 확인합니다.
+1. 전체 학부모를 대상으로 하는 인사말에 적합한가?
+2. 학교 교육과정 및 학교생활 안내라는 설명회 목적이 드러나는가?
+3. 학교와 가정의 소통과 협력이라는 핵심 메시지가 분명한가?
+4. 따뜻하고 정중하며 진정성 있는 말투를 유지하는가?
+5. 실제 낭독 기준 약 1분 분량인가?
+6. 확인되지 않은 학교 정보나 과장된 표현이 포함되지 않았는가?
+7. 도입부터 마무리까지 자연스럽게 이어지는가?
+
+8. 출력 형식
+- 제목: 학부모 설명회 교장 인사말
+- 본문: 완성된 인사말만 제시합니다.
+- 인사말은 복사하여 바로 사용할 수 있도록 별도의 코드블록으로 제공합니다.
+- 작성 과정, 평가 점수, 불필요한 해설은 출력하지 않습니다.
+
+이제 위 조건을 모두 반영하여 초등학교 학부모 설명회에서 교장이 전할 약 1분 분량의 인사말을 작성하세요.</pre></div>
+
+      <h3>프롬프트 작성법 | 학교 업무 예시</h3>
+      <div class="box note"><span class="box-title">📌 포인트</span>목적 · 대상 · 분량 · 말투 · 누락 정보 처리까지 함께 전달하기</div>
+      <div class="prompt" id="p1-06" data-label="학부모 설명회 안내문 — 프롬프트 만들기 요청"><pre>학부모 설명회 안내문을 작성하려고 해.
+초등학교 또는 중학교 학부모가 쉽게 이해하도록,
+A4 1쪽 분량의 정중하고 친근한 안내문을 만들고 싶어.
+이 작업에 사용할 프롬프트를 만들어 줘.
+필요한 정보가 부족하면 먼저 3가지 이내로 질문해 줘.
+일시·장소 등 확인되지 않은 정보는 [입력 필요]로 표시해 줘.
+내 답변을 반영해 복사해서 쓸 최종 프롬프트를 제시해 줘.</pre></div>
+    </section>
+
+    <section class="card" id="refine">
+      <h2><span class="num">06</span>환각 줄이기와 답변을 다듬는 추가 요청</h2>
+      <p class="lead">환각 현상(Hallucination)은 AI가 사실이 아닌 내용을 그럴듯하게 만들어 내는 현상입니다.</p>
+
+      <div class="prompt short" id="p1-07" data-label="환각 방지 — 자료에 없는 내용은 ‘확인 필요’로"><pre>제공한 자료에 없는 내용은 임의로 채우지 말고 ‘확인 필요’로 표시해 줘.</pre></div>
+
+      <h3>답변을 다듬는 추가 요청</h3>
+      <div class="prompt-group">
+        <div class="prompt short" id="p1-08" data-label="답변 다듬기 ① 분량"><pre>절반 정도로 줄이되 환영 메시지는 남겨 주세요.</pre></div>
+        <div class="prompt short" id="p1-09" data-label="답변 다듬기 ② 문체"><pre>추상적인 말을 줄이고 자연스러운 구어체로 바꿔 주세요.</pre></div>
+        <div class="prompt short" id="p1-10" data-label="답변 다듬기 ③ 내용"><pre>근거 없이 넣은 학교 관련 내용을 따로 표시해 주세요.</pre></div>
+        <div class="prompt short" id="p1-11" data-label="답변 다듬기 ④ 검토"><pre>내가 제시한 조건 중 빠진 항목을 찾아 주세요.</pre></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initSessionPage(1);</script>
+</body>
+</html>
